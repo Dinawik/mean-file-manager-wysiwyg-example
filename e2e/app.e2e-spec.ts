@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('mean-file-upload-wysiwyg-example App', () => {
+describe('mean-file-manager-wysiwyg-example App', () => {
   let page: AppPage;
 
   beforeEach(() => {

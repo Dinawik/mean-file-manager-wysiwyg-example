@@ -1,0 +1,4 @@
+<div class="text-center" *ngIf="files === undefined || files.length === 0">Couldn't find any file!</div>
+<div *ngFor="let file of files">
+  <a [href]="'api/' + file" target="_blank">{{ file }}</a>
+</div>

@@ -1,4 +1,38 @@
-# MeanFileUploadWysiwygExample
+ng new mean-file-manager-wysiwyg-example
+
+mkdir node_src
+mkdir node_src/routes
+mkdir src/assets/uploads (if you don't create this folder, you will get an error.)
+
+touch node_src/routes/angular.js
+touch node_src/routes/api.js
+touch node_src/server.js
+touch node_src/config.js
+
+# Update package.json
+    "dev": "ng build --prod --build-optimizer=false && node ./node_src/server.js",
+    "prod": "ng build --prod && node ./node_src/server.js",
+    
+npm install morgan
+npm install mongoose
+npm install express
+npm install multer
+
+
+ng generate component file-list
+
+ng generate component file-upload
+
+
+# Thanks to their projects. You could have a look for more understanding MEAN Stack.
+https://github.com/didinj/mean-stack-angular5-crud
+https://github.com/stanleyeosakul/mean-crud-example
+
+
+
+
+
+# Simple File Manager with WYSIWYG MEAN Stack Example
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 

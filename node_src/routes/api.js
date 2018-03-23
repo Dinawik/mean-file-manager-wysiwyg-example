@@ -53,7 +53,14 @@ router.get('/', function (req, res, next) {
       console.error(err);
       return res.sendStatus(400);
     }
-    res.json(files);
+    var fileJson = files.map(function (fileName) {
+      const stats = fs.statSync(uploadFolder + fileName);
+      const fileSizeInBytes = stats.size;
+      // Convert the file size to megabytes
+      const fileSizeInMegabytes = fileSizeInBytes / 1000000.0;
+      return {name: fileName, size: fileSizeInMegabytes};
+    });
+    res.json(fileJson);
   })
 });
 

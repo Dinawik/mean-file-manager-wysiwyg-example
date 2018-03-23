@@ -1,12 +1,17 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img alt="Dinawik Logo" src="http://dinawik.com/old_site/Imagez/DinawikLogo.png">
-  <br>
-  <img alt="Dinawik Logo" src="http://dinawik.com/old_site/Imagez/DinawikText.png">
-</div>
-<a routerLink="/file-list">File List</a>
-<a routerLink="/file-upload">File Upload</a>
-<router-outlet></router-outlet>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span><a routerLink="/"><img alt="Dinawik Logo" src="http://dinawik.com/old_site/Imagez/DinawikText.png"></a></span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span>Simple Example of File Manager with WYSIWYG Editor on MEAN Stack</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-card>
+  <mat-card-actions>
+    <a mat-raised-button routerLink="/file-list">File List</a>
+    <a mat-raised-button routerLink="/file-upload">File Upload</a>
+  </mat-card-actions>
+  <mat-card-content>
+    <router-outlet></router-outlet>
+  </mat-card-content>
+</mat-card>

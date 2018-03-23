@@ -1,4 +1,20 @@
-<div class="text-center" *ngIf="files === undefined || files.length === 0">Couldn't find any file!</div>
-<div *ngFor="let file of files">
-  <a [href]="'api/' + file" target="_blank">{{ file }}</a>
+<!--<div class="text-center" *ngIf="files === undefined || files.length === 0">Couldn't find any file!</div>-->
+<!--<div *ngFor="let file of files">-->
+  <!--<a [href]="'api/' + file" target="_blank">{{ file }}</a>-->
+<!--</div>-->
+
+
+<div>
+  <mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let file"> {{file.name}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="size">
+      <mat-header-cell *matHeaderCellDef> Size (MB) </mat-header-cell>
+      <mat-cell *matCellDef="let file"> {{file.size}} </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
 </div>

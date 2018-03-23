@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {FileData} from './file-data';
 
 @Injectable()
 export class FileManagerService {
@@ -11,7 +12,7 @@ export class FileManagerService {
   }
 
   getFiles() {
-    return this.http.get('/api');
+    return this.http.get<FileData[]>('/api');
   }
 
   deleteFile(fileName) {

@@ -1,0 +1,160 @@
+{
+	"info": {
+		"name": "Simple File Manager with WYSIWYG MEAN Stack Example",
+		"_postman_id": "4d799cca-8a3a-07a2-ea04-9a591be8f3e8",
+		"description": "This collection is for \"Simple File Manager with WYSIWYG MEAN Stack Example\". It includes file manager APIs.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload file(s)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file1",
+							"description": "",
+							"type": "file",
+							"src": "Neues Textdokument.txt"
+						},
+						{
+							"key": "file2",
+							"description": "",
+							"type": "file",
+							"src": "Unbenannt.PNG"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get file",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"description": "",
+							"type": "file",
+							"src": "Unbenannt.PNG"
+						},
+						{
+							"key": "",
+							"description": "",
+							"type": "file",
+							"src": "Neues Textdokument.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/api/file2-1521455244901.PNG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"file2-1521455244901.PNG"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get file list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"description": "",
+							"type": "file",
+							"src": "Unbenannt.PNG"
+						},
+						{
+							"key": "",
+							"description": "",
+							"type": "file",
+							"src": "Neues Textdokument.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete file",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3333/api/file2-1521455244901.PNG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"file2-1521455244901.PNG"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

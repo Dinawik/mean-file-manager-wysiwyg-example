@@ -1,0 +1,168 @@
+{
+	"id": "4d799cca-8a3a-07a2-ea04-9a591be8f3e8",
+	"name": "Simple File Manager with WYSIWYG MEAN Stack Example",
+	"description": "This collection is for \"Simple File Manager with WYSIWYG MEAN Stack Example\". It includes file manager APIs.",
+	"order": [
+		"3a563b92-5fac-cdb9-b4ca-61b9abf46994",
+		"c26d02ea-16a8-6c9a-7019-318a24ea8db3",
+		"6e1e5b86-7710-fba7-8da4-b66ef5d9f51a",
+		"c8f4bcb3-94c8-de93-8f49-2176170301d7"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1521455010404,
+	"owner": 0,
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "3a563b92-5fac-cdb9-b4ca-61b9abf46994",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3333/api",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "file1",
+					"value": "Neues Textdokument.txt",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "file2",
+					"value": "Unbenannt.PNG",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"auth": null,
+			"time": 1521455251548,
+			"name": "Upload file(s)",
+			"description": "",
+			"collectionId": "4d799cca-8a3a-07a2-ea04-9a591be8f3e8",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "6e1e5b86-7710-fba7-8da4-b66ef5d9f51a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3333/api",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "",
+					"value": "Unbenannt.PNG",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "Neues Textdokument.txt",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"auth": null,
+			"time": 1521455171552,
+			"name": "Get file list",
+			"description": "",
+			"collectionId": "4d799cca-8a3a-07a2-ea04-9a591be8f3e8",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c26d02ea-16a8-6c9a-7019-318a24ea8db3",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3333/api/file2-1521455244901.PNG",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "",
+					"value": "Unbenannt.PNG",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "Neues Textdokument.txt",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"auth": null,
+			"time": 1521455333235,
+			"name": "Get file",
+			"description": "",
+			"collectionId": "4d799cca-8a3a-07a2-ea04-9a591be8f3e8",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c8f4bcb3-94c8-de93-8f49-2176170301d7",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3333/api/file2-1521455244901.PNG",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "DELETE",
+			"collectionId": "4d799cca-8a3a-07a2-ea04-9a591be8f3e8",
+			"data": [
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Delete file",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1521455374532,
+			"version": 2,
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

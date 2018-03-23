@@ -9,17 +9,20 @@ import {FileListComponent} from './file-manager/file-list/file-list.component';
 import {FileUploadComponent} from './file-manager/file-upload/file-upload.component';
 import {FileManagerService} from './file-manager/file-manager.service';
 import {MaterialModule} from './others/material/material.module';
+import {WysiwygEditorComponent} from './wysiwyg-editor/wysiwyg-editor.component';
 
 const appRoutes: Routes = [
   {path: 'file-list', component: FileListComponent},
-  {path: 'file-upload', component: FileUploadComponent}
+  {path: 'file-upload', component: FileUploadComponent},
+  {path: 'wysiwyg-editor', component: WysiwygEditorComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     FileListComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    WysiwygEditorComponent
   ],
   imports: [
     BrowserModule,

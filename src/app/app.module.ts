@@ -10,6 +10,7 @@ import {FileUploadComponent} from './file-manager/file-upload/file-upload.compon
 import {FileManagerService} from './file-manager/file-manager.service';
 import {MaterialModule} from './others/material/material.module';
 import {WysiwygEditorComponent} from './wysiwyg-editor/wysiwyg-editor.component';
+import {QuillModule} from 'ngx-quill';
 
 const appRoutes: Routes = [
   {path: 'file-list', component: FileListComponent},
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    QuillModule
   ],
   providers: [FileManagerService],
   bootstrap: [AppComponent]

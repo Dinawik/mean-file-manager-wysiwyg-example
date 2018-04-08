@@ -1,3 +1,22 @@
-<p>
-  wysiwyg-editor works!
-</p>
+<quill-editor [modules]="modules" (onEditorCreated)="onEditorCreated($event)" #editor>
+  <div quill-editor-toolbar>
+    <span class="ql-formats">
+      <button class="ql-bold" [title]="'Bold'"></button>
+    </span>
+    <span class="ql-formats">
+      <select class="ql-align" [title]="'Aligment'">
+        <option selected></option>
+        <option value="center"></option>
+        <option value="right"></option>
+        <option value="justify"></option>
+      </select>
+      <select class="ql-align" [title]="'Aligment2'">
+        <option selected></option>
+        <option value="center"></option>
+        <option value="right"></option>
+        <option value="justify"></option>
+      </select>
+    </span>
+    <button (click)="add(editor)">[source]</button>
+  </div>
+</quill-editor>
